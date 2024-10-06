@@ -79,9 +79,9 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>{text}</Text>
-      <Button title="Play Sound" onPress={playSound} />
       <CameraView style={styles.camera} facing={facing}>
+        <Text style={styles.text}>{text}</Text>
+        <Button title="Play Sound" onPress={playSound} />
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button} onPress={toggleCameraFacing}>
             <Text style={styles.text}>Flip Camera</Text>
